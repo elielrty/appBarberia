@@ -17,7 +17,7 @@ export default ( logando = false ) => createAppContainer(
     },{
       tabBarOptions: {
         keyboardHidesTabBar: true, //quando tecla do abrir vai passar por cima da tab
-        activeTintColor: '#F2C230',
+        activeTintColor: '#FBD068',
         inactiveTintColor: '#F2F2F2',
         style: {
           backgroundColor: '#000000'

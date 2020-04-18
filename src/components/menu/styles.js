@@ -1,10 +1,14 @@
 import styled from 'styled-components/native';
 
 export const Container = styled.View`
-  margin-bottom: 15px;
+    flex: 1; 
+`
+
+export const ContainerMenu = styled.View`
+  margin: 15px;
   padding: 20px;
   border-radius: 4px;
-  background: #fff;
+  background: #D2D7D9;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -15,19 +19,16 @@ display: flex;
 flex-direction: row;
 align-items: center;
 ` 
-
-export const Info = styled.View`
-  margin-left: 15px;
+export const ContainerTexto = styled.View`
+  margin-left: 45px;
 `
-
-export const Nome = styled.Text`
- font-size: 14px;
+export const TituloMenu = styled.Text`
+ font-size: 25px;
  font-weight: bold;
  color: #333;
 `
-
-export const Horario = styled.Text`
-  font-size: 13px;
-  margin-top: 4px;
-  color: #999;
+export const ImgMenu = styled.Image`
+ width: 60px;
+ height: 60px;
+ border-radius: 30px;
 `

@@ -5,7 +5,7 @@ import criarRota from './routes';
 
 
 export default function App() {
-  const logando = true //autecação aqui
+  const logando = true //autenticação aqui
   const Rotas = criarRota(logando)
   return (
     <>
