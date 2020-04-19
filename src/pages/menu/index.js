@@ -9,12 +9,12 @@ import ItemMenu from '~/components/menu'
 
 // const data = [1, 2, 3, 4, 5]
 
-export default function Agendamento() {
+export default function Agendamento({ navigation }) {
   return (
     <Fundo>
       <Container>
         <Titulo>Menu</Titulo>
-        <TouchableOpacity onPress={() => { }}>
+        <TouchableOpacity onPress={() => {navigation.navigate('Lista')}}>
           <ItemMenu Titulo="Cabelo"/>
         </TouchableOpacity>
         <TouchableOpacity onPress={() => { }}>

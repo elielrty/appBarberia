@@ -2,7 +2,7 @@ import React from 'react';
 import { Image } from 'react-native'
 import { Esquerda, ContainerTexto, ContainerMenu, TituloMenu, ImgMenu } from './styles'
 import Icone from 'react-native-vector-icons/MaterialIcons'
-import { Titulo } from '~/pages/agendamento/styles';
+import { Titulo } from '~/pages/menu/styles';
 
 // import { Container } from './styles';
 
@@ -24,7 +24,7 @@ export default function menu({ Titulo, }) {
 
         <ContainerMenu>
             <Esquerda>
-                { verificarimg(Titulo)}
+                { verificarimg(Titulo) }
                 <ContainerTexto>
                     <TituloMenu>{Titulo}</ TituloMenu>
                 </ContainerTexto>

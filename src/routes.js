@@ -1,9 +1,12 @@
 import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 import { createBottomTabNavigator } from 'react-navigation-tabs'
+import { createStackNavigator } from 'react-navigation-stack'
+
 import Login from './pages/login';
 import Cadastro from './pages/cadastro';
-import Agendamento from './pages/agendamento'
+import Menu from './pages/menu'
 import Agendar from './pages/agendar'
+import ListaAgendamentos from './pages/listaAgendamento'
 
 export default ( logando = false ) => createAppContainer(
   createSwitchNavigator({
@@ -12,8 +15,8 @@ export default ( logando = false ) => createAppContainer(
       Cadastro,
     }),
     App: createBottomTabNavigator({
-      Agendamento,
-      Agendar
+      Menu,
+      Agendar,
     },{
       tabBarOptions: {
         keyboardHidesTabBar: true, //quando tecla do abrir vai passar por cima da tab
@@ -23,7 +26,10 @@ export default ( logando = false ) => createAppContainer(
           backgroundColor: '#000000'
         }
       }
-    })
+    }),
+    Lista: createStackNavigator({
+      ListaAgendamentos
+    }),
   },{
     initialRouteName: logando ? 'App' : 'autenticar' 
   })

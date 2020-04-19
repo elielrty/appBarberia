@@ -10,10 +10,6 @@ export const Titulo = styled.Text`
     align-self: center;
     margin-top: 30px;
 `
-// export const Lista = styled.FlatList.attrs({
-//     showsVerticalScrollIndicator: false, //tirando barra de rolagem que vem por padrão
-//     contentContainerStyle: { padding: 30 }
-// })``
 
 
 
