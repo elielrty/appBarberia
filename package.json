@@ -8,7 +8,6 @@
   "description": "eliel config",
   "dependencies": {
     "@react-native-community/async-storage": "^1.9.0",
-    "@react-native-community/masked-view": "^0.1.9",
     "babel-plugin-root-import": "^6.5.0",
     "react": "16.13.1",
     "react-native": "0.62.1",
